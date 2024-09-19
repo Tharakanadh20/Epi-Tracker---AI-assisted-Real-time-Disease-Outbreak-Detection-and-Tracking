@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f38cf35ab2816aa982bef07d5924ac9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f38cf35ab2816aa982bef07d5924ac9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f38cf35ab2816aa982bef07d5924ac9 = L.map(
+                "map_7f38cf35ab2816aa982bef07d5924ac9",
+                {
+                    center: [50.8503, 4.3517],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4840c006f8d5807b4ede555cf4102b50 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4840c006f8d5807b4ede555cf4102b50.addTo(map_7f38cf35ab2816aa982bef07d5924ac9);
+        
+    
+            var circle_marker_dc0730a7cc4912e9716957cb8f8fc233 = L.circleMarker(
+                [47.5162, 14.5501],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7f38cf35ab2816aa982bef07d5924ac9);
+        
+    
+        var popup_87c413d6989b278c717e70f98fef94c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b8a16311cb201161fd0e2a3b97c635f = $(`<div id="html_9b8a16311cb201161fd0e2a3b97c635f" style="width: 100.0%; height: 100.0%;">Austria<br>Gonorrhoea: 50000, HIV: 150000</div>`)[0];
+                popup_87c413d6989b278c717e70f98fef94c9.setContent(html_9b8a16311cb201161fd0e2a3b97c635f);
+            
+        
+
+        circle_marker_dc0730a7cc4912e9716957cb8f8fc233.bindPopup(popup_87c413d6989b278c717e70f98fef94c9)
+        ;
+
+        
+    
+    
+            var circle_marker_c772278e5a2432c8a02c6c0e278f09e6 = L.circleMarker(
+                [50.5039, 4.4699],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7f38cf35ab2816aa982bef07d5924ac9);
+        
+    
+        var popup_d4432d82f9ef15b353887f51a8b81848 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5346a673defde976bc97178d97f61f7a = $(`<div id="html_5346a673defde976bc97178d97f61f7a" style="width: 100.0%; height: 100.0%;">Belgium<br>Gonorrhoea: 120000, HIV: 180000</div>`)[0];
+                popup_d4432d82f9ef15b353887f51a8b81848.setContent(html_5346a673defde976bc97178d97f61f7a);
+            
+        
+
+        circle_marker_c772278e5a2432c8a02c6c0e278f09e6.bindPopup(popup_d4432d82f9ef15b353887f51a8b81848)
+        ;
+
+        
+    
+    
+            var circle_marker_6c7a6a7c59115bc586ab9a39e2423e26 = L.circleMarker(
+                [49.8175, 15.473],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7f38cf35ab2816aa982bef07d5924ac9);
+        
+    
+        var popup_205773e7960f1fdb1e5288b48205e048 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8b183b31037cb87aadb47633dcc3566 = $(`<div id="html_f8b183b31037cb87aadb47633dcc3566" style="width: 100.0%; height: 100.0%;">Czechia<br>Gonorrhoea: 50000, HIV: 100000</div>`)[0];
+                popup_205773e7960f1fdb1e5288b48205e048.setContent(html_f8b183b31037cb87aadb47633dcc3566);
+            
+        
+
+        circle_marker_6c7a6a7c59115bc586ab9a39e2423e26.bindPopup(popup_205773e7960f1fdb1e5288b48205e048)
+        ;
+
+        
+    
+    
+            var circle_marker_9814a61a92952b6d7d3eaa7bb04a52b8 = L.circleMarker(
+                [56.2639, 9.5018],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7f38cf35ab2816aa982bef07d5924ac9);
+        
+    
+        var popup_bf3a12c0ebd968b251db85887b68173d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1283eea1945c14ea1d038f6552f83d6b = $(`<div id="html_1283eea1945c14ea1d038f6552f83d6b" style="width: 100.0%; height: 100.0%;">Denmark<br>Gonorrhoea: 80000, HIV: 100000</div>`)[0];
+                popup_bf3a12c0ebd968b251db85887b68173d.setContent(html_1283eea1945c14ea1d038f6552f83d6b);
+            
+        
+
+        circle_marker_9814a61a92952b6d7d3eaa7bb04a52b8.bindPopup(popup_bf3a12c0ebd968b251db85887b68173d)
+        ;
+
+        
+    
+</script>
+</html>
